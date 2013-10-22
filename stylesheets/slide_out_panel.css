@@ -113,3 +113,23 @@
 #slideout #slideoutForm fieldset {
   margin: 10px 0px;
 }
+
+/* line 102, ../sass/slide_out_panel.sass */
+#slideout-ascii {
+  position: fixed;
+  line-height: 90%;
+  left: -200px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+/* line 107, ../sass/slide_out_panel.sass */
+pre:hover {
+  -webkit-transform: translate(200px, 0px);
+  -moz-transform: translate(200px, 0px);
+  -ms-transform: translate(200px, 0px);
+  -o-transform: translate(200px, 0px);
+  transform: translate(200px, 0px);
+}

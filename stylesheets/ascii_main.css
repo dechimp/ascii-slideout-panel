@@ -1,0 +1,11 @@
+/* line 1, ../sass/ascii_main.sass */
+body {
+  font-family: courier, "Courier New", monospace;
+}
+
+/* line 3, ../sass/ascii_main.sass */
+.source_link {
+  z-index: -1;
+  position: absolute;
+  bottom: 10%;
+}

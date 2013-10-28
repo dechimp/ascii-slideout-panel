@@ -1,6 +1,10 @@
+@import "compass/css3/transform"
+
+$monospace:  "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace
+
 #slideoutForm
   fieldset
-    margin: 3px
+    margin: 5px
   label
     display: block
   $dashed: 1px dashed black
@@ -12,3 +16,11 @@
     border-bottom: $dashed
   textarea
     border: $dashed
+  input[type=submit]
+    border: $dashed
+    font-family: $monospace
+    background: white
+    // display: block
+    // margin: 0 auto
+    &:hover
+      +transform(translate(1px,1px))

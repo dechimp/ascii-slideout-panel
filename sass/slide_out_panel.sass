@@ -4,106 +4,83 @@
 @import "compass/css3/transition"
 @import "compass/utilities/general/clearfix"
 
-=debug-slideout   
+=debug-1
   background: blue
   opacity: 0.7
 
-$slideout-width: 300px
-$slideout-height: 150px
-$hot-color: #f80
-$background: $hot-color
-$highlight: #fb3
-$tab-width: 100px
-
-=unrotate
-  +transform(rotate(-90deg))
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-1)
-
-=rounded-corners  
-  +border-top-left-radius(9px)  
-  +border-top-right-radius(9px)  
- 
-=debug-feedback  
+=debug-2
   background: gray
   opacity: 0.5
 
-=debug-form
+=debug-3
   background: green
   opacity: 0.8
 
-=rotate  
-  +transform(rotate(90deg))
-  +transform-origin(0%,0%)
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1)
+// $slideout-width: 300px
+// $slideout-height: 150px
+// $tab-width: 100px
 
-=bold-text
-  color: #fff 
-  font-family: Arial, sans-serif 
-  font-size: 17px 
-  font-weight: bold 
-  text-decoration: none 
-  +text-shadow(3px 3px 3px #5f0220)
-  
 .slide
   +transform(translate($slideout-width,0px))
 
-#slideout  
-  // +debug-slideout
-  height: $slideout-height
-  width: $slideout-width
-  position: fixed
-  top: 100px
-  left: (-$slideout-width)
-  // not sure why but this is causing a bug when closing the slideout box
-    // +transition-duration(0.1s)  
- 
-  #slideoutTab
-    // +debug-feedback
-    height: $slideout-width 
-    width: $slideout-height
-    position: relative
-    +rotate
-    left: 0px
-    top: 0px
-    z-index: -1 
-    a   
-      position: fixed
-      background: $background
-      top: (-29px - $slideout-width)
-      left: 30%
-      height: auto 
-      width: auto 
-      padding: 8px 16px
-      +bold-text
-      +rounded-corners
-      +transition-duration(0.1s)
-      &:hover 
-        +transform(translate(0px,-5px) scale(1.05))
-
-  #slideoutForm
-    // +debug-form
-    $slideout-padding: 10px
-    width: ($slideout-width - (2 * $slideout-padding))
-    background: $background
-    padding: $slideout-padding
-    position: fixed
-    top: 0px
-    +border-right-radius(3px)
-    label
-      display: block
-      +bold-text
-    input, textarea
-      +border-radius(4px)
-    [type=submit]:hover
-      +transform(translate(1px,1px))
-    fieldset
-      margin: 10px 0px
-
 #slideout-ascii
-  position: fixed
+  position: absolute
   line-height: 90%
   left: -200px
   +transition-duration(0.3s)
 
 pre:hover
   +translate(200px,0px)
+
+// #slideout  
+  // // +debug-slideout
+  // height: $slideout-height
+  // width: $slideout-width
+  // position: fixed
+  // top: 100px
+  // left: (-$slideout-width)
+  // // not sure why but this is causing a bug when closing the slideout box
+    // // +transition-duration(0.1s)  
+ 
+  // #slideoutTab
+    // // +debug-feedback
+    // height: $slideout-width 
+    // width: $slideout-height
+    // position: relative
+    // +rotate
+    // left: 0px
+    // top: 0px
+    // z-index: -1 
+    // a   
+      // position: fixed
+      // background: $background
+      // top: (-29px - $slideout-width)
+      // left: 30%
+      // height: auto 
+      // width: auto 
+      // padding: 8px 16px
+      // +bold-text
+      // +rounded-corners
+      // +transition-duration(0.1s)
+      // &:hover 
+        // +transform(translate(0px,-5px) scale(1.05))
+
+  // #slideoutForm
+    // // +debug-form
+    // $slideout-padding: 10px
+    // width: ($slideout-width - (2 * $slideout-padding))
+    // background: $background
+    // padding: $slideout-padding
+    // position: fixed
+    // top: 0px
+    // +border-right-radius(3px)
+    // label
+      // display: block
+      // +bold-text
+    // input, textarea
+      // +border-radius(4px)
+    // [type=submit]:hover
+      // +transform(translate(1px,1px))
+    // fieldset
+      // margin: 10px 0px
+

@@ -20,17 +20,16 @@
 // $slideout-height: 150px
 // $tab-width: 100px
 
-.slide
-  +transform(translate($slideout-width,0px))
+// .slide
+  // +transform(translate($slideout-width,0px))
 
 #slideout-ascii
   position: absolute
   line-height: 90%
   left: -200px
   +transition-duration(0.3s)
-
-pre:hover
-  +translate(200px,0px)
+  &:hover
+    +translate(200px,0px)
 
 // #slideout  
   // // +debug-slideout

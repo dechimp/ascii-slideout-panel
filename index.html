@@ -16,28 +16,29 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-    <form id="slideoutForm">
-      <fieldset>
-        <label>Name:</label>
-        <input type="text" name="name" required />
-      </fieldset>
-      <fieldset>
-        <label>Email:</label>
-        <input type="email" name="email" required />
-      </fieldset>
-      <fieldset>
-        <label>Phone:</label>
-        <input type="text" name="phone" />
-      </fieldset>
-      <fieldset>
-        <label>Comment:</label>
-        <textarea  cols="20" rows="4"></textarea>
-      </fieldset>
-      <fieldset>
-        <input type="submit" value="Submit" />
-      </fieldset>
-    </form>
-    <pre id="slideout-ascii">
+    <div id="slideout-ascii">
+      <form id="ascii_form">
+        <fieldset>
+          <label>Name:</label>
+          <input type="text" name="name" required />
+        </fieldset>
+        <fieldset>
+          <label>Email:</label>
+          <input type="email" name="email" required />
+        </fieldset>
+        <fieldset>
+          <label>Phone:</label>
+          <input type="text" name="phone" />
+        </fieldset>
+        <fieldset>
+          <label>Comment:</label>
+          <textarea  cols="20" rows="4"></textarea>
+        </fieldset>
+        <fieldset>
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+      <pre>
 ===================*
                    *
   Name:_________   *
@@ -61,7 +62,8 @@
                    *
 ===================*
 
-    </pre>
+      </pre>
+    </div>
     <a href="https://github.com/dechimp/ascii-ui-experiment" class="source_link" >source code</a>
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/main.js"></script>

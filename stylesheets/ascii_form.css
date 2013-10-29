@@ -1,30 +1,34 @@
-/* line 6, ../sass/ascii_form.sass */
-#slideoutForm fieldset {
+/* line 5, ../sass/ascii_form.sass */
+#ascii_form {
+  position: relative;
+}
+/* line 7, ../sass/ascii_form.sass */
+#ascii_form fieldset {
   margin: 5px;
 }
-/* line 8, ../sass/ascii_form.sass */
-#slideoutForm label {
+/* line 9, ../sass/ascii_form.sass */
+#ascii_form label {
   display: block;
 }
-/* line 11, ../sass/ascii_form.sass */
-#slideoutForm input[type=text], #slideoutForm input[type=email] {
+/* line 12, ../sass/ascii_form.sass */
+#ascii_form input[type=text], #ascii_form input[type=email] {
   border-top: 0px solid black;
   border-right: 0px solid black;
   border-left: 0px solid black;
   border-bottom: 1px dashed black;
 }
-/* line 17, ../sass/ascii_form.sass */
-#slideoutForm textarea {
+/* line 18, ../sass/ascii_form.sass */
+#ascii_form textarea {
   border: 1px dashed black;
 }
-/* line 19, ../sass/ascii_form.sass */
-#slideoutForm input[type=submit] {
+/* line 20, ../sass/ascii_form.sass */
+#ascii_form input[type=submit] {
   border: 1px dashed black;
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
   background: white;
 }
-/* line 25, ../sass/ascii_form.sass */
-#slideoutForm input[type=submit]:hover {
+/* line 26, ../sass/ascii_form.sass */
+#ascii_form input[type=submit]:hover {
   -webkit-transform: translate(1px, 1px);
   -moz-transform: translate(1px, 1px);
   -ms-transform: translate(1px, 1px);

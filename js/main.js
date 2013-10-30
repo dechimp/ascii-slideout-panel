@@ -3,11 +3,11 @@
   var slideToggle;
 
   slideToggle = function() {
-    return $("#slideout").toggleClass("slide");
+    return $("#slideout-ascii").toggleClass("slide");
   };
 
   $(function() {
-    return $("#slideoutTab").on('click', slideToggle);
+    return $("#slideout-ascii").on('click', slideToggle);
   });
 
 }).call(this);

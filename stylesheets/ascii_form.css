@@ -1,33 +1,37 @@
 /* line 5, ../sass/ascii_form.sass */
 #ascii_form {
-  position: relative;
+  position: fixed;
+  top: 15px;
+  left: 10px;
+  width: 210px;
+  z-index: 999;
 }
-/* line 7, ../sass/ascii_form.sass */
+/* line 11, ../sass/ascii_form.sass */
 #ascii_form fieldset {
   margin: 5px;
 }
-/* line 9, ../sass/ascii_form.sass */
+/* line 13, ../sass/ascii_form.sass */
 #ascii_form label {
   display: block;
 }
-/* line 12, ../sass/ascii_form.sass */
+/* line 16, ../sass/ascii_form.sass */
 #ascii_form input[type=text], #ascii_form input[type=email] {
   border-top: 0px solid black;
   border-right: 0px solid black;
   border-left: 0px solid black;
   border-bottom: 1px dashed black;
 }
-/* line 18, ../sass/ascii_form.sass */
+/* line 22, ../sass/ascii_form.sass */
 #ascii_form textarea {
   border: 1px dashed black;
 }
-/* line 20, ../sass/ascii_form.sass */
+/* line 24, ../sass/ascii_form.sass */
 #ascii_form input[type=submit] {
   border: 1px dashed black;
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
   background: white;
 }
-/* line 26, ../sass/ascii_form.sass */
+/* line 30, ../sass/ascii_form.sass */
 #ascii_form input[type=submit]:hover {
   -webkit-transform: translate(1px, 1px);
   -moz-transform: translate(1px, 1px);

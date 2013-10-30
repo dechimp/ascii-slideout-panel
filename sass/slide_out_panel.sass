@@ -1,5 +1,4 @@
 @import "compass/css3/border-radius"
-@import "compass/css3/text-shadow"
 @import "compass/css3/transform"
 @import "compass/css3/transition"
 @import "compass/utilities/general/clearfix"
@@ -16,20 +15,28 @@
   background: green
   opacity: 0.8
 
-// $slideout-width: 300px
+$slideout-width: 300px
 // $slideout-height: 150px
 // $tab-width: 100px
 
-// .slide
-  // +transform(translate($slideout-width,0px))
+.slide
+  +transform(translate($slideout-width,0px))
 
 #slideout-ascii
-  position: absolute
+  position: relative
+  height: 500px
+  width: $slideout-width
   line-height: 90%
   left: -200px
   +transition-duration(0.3s)
-  &:hover
-    +translate(200px,0px)
+  // &:hover
+    // +translate(200px,0px)
+  #slideout_background
+    position: fixed
+    display: block
+    top: 0
+    left: 0
+    z-index: -1
 
 // #slideout  
   // // +debug-slideout

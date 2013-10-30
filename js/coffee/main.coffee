@@ -1,6 +1,6 @@
 slideToggle = ->
-  $("#slideout").toggleClass("slide")
+  $("#slideout-ascii").toggleClass("slide")
 $ ->
-  $("#slideoutTab").on('click', slideToggle)
+  $("#slideout-ascii").on('click', slideToggle)
   
 

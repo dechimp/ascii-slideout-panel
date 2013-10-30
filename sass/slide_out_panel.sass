@@ -15,27 +15,30 @@
   background: green
   opacity: 0.8
 
-$slideout-width: 300px
+$slideout-width: 250px
+$slideout-background-width: 280px
 // $slideout-height: 150px
 // $tab-width: 100px
 
 .slide
   +transform(translate($slideout-width,0px))
 
+.inchOut
+  +transform(translate(5px,0px))
+
 #slideout-ascii
-  position: relative
+  position: absolute
   height: 500px
   width: $slideout-width
   line-height: 90%
-  left: -200px
-  +transition-duration(0.3s)
+  left: (0 - $slideout-width)
+  +transition-duration(0.2s)
   // &:hover
-    // +translate(200px,0px)
+    // +translate(4px,0px)
   #slideout_background
-    position: fixed
-    display: block
-    top: 0
-    left: 0
+    position: absolute
+    margin: 0px
+    width: $slideout-background-width
     z-index: -1
 
 // #slideout  

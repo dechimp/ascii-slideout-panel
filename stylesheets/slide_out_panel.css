@@ -1,29 +1,37 @@
-/* line 22, ../sass/slide_out_panel.sass */
+/* line 23, ../sass/slide_out_panel.sass */
 .slide {
-  -webkit-transform: translate(300px, 0px);
-  -moz-transform: translate(300px, 0px);
-  -ms-transform: translate(300px, 0px);
-  -o-transform: translate(300px, 0px);
-  transform: translate(300px, 0px);
+  -webkit-transform: translate(250px, 0px);
+  -moz-transform: translate(250px, 0px);
+  -ms-transform: translate(250px, 0px);
+  -o-transform: translate(250px, 0px);
+  transform: translate(250px, 0px);
 }
 
-/* line 25, ../sass/slide_out_panel.sass */
-#slideout-ascii {
-  position: relative;
-  height: 500px;
-  width: 300px;
-  line-height: 90%;
-  left: -200px;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+/* line 26, ../sass/slide_out_panel.sass */
+.inchOut {
+  -webkit-transform: translate(5px, 0px);
+  -moz-transform: translate(5px, 0px);
+  -ms-transform: translate(5px, 0px);
+  -o-transform: translate(5px, 0px);
+  transform: translate(5px, 0px);
 }
-/* line 34, ../sass/slide_out_panel.sass */
+
+/* line 29, ../sass/slide_out_panel.sass */
+#slideout-ascii {
+  position: absolute;
+  height: 500px;
+  width: 250px;
+  line-height: 90%;
+  left: -250px;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 38, ../sass/slide_out_panel.sass */
 #slideout-ascii #slideout_background {
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
+  position: absolute;
+  margin: 0px;
+  width: 280px;
   z-index: -1;
 }

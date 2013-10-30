@@ -3,11 +3,10 @@
 $monospace:  "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace
 
 #ascii_form
-  position: fixed
-  top: 15px
-  left: 10px
+  position: absolute
   width: 210px
   z-index: 999
+  top: 20px
   fieldset
     margin: 5px
   label
@@ -20,12 +19,17 @@ $monospace:  "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewrite
     border-left: $no-border
     border-bottom: $dashed
   textarea
+    resize: none
     border: $dashed
+  #submitField
+    position: relative
+    top: 5px
   input[type=submit]
+    position: relative
+    margin: auto
+    display: block
     border: $dashed
     font-family: $monospace
     background: white
-    // display: block
-    // margin: 0 auto
     &:hover
-      +transform(translate(1px,1px))
+      +transform(translate(1px,2px))

@@ -5,13 +5,13 @@
   window.sliderHidden = true;
 
   slideOn = function() {
-    $("#slideout-ascii").off('mouseenter mouseleave');
-    $("#slideout-ascii").removeClass();
-    return $("#slideout-ascii").addClass("slide");
+    $(".slideout-ascii").off('mouseenter mouseleave');
+    $(".slideout-ascii").removeClass("inchOut");
+    return $(".slideout-ascii").addClass("slide");
   };
 
   slideOff = function() {
-    $("#slideout-ascii").removeClass();
+    $(".slideout-ascii").removeClass("slide");
     return addInchOutListener();
   };
 
@@ -26,16 +26,16 @@
   };
 
   addInchOutListener = function() {
-    $("#slideout-ascii").on('mouseenter', function() {
+    $(".slideout-ascii").on('mouseenter', function() {
       return $(this).addClass('inchOut');
     });
-    return $("#slideout-ascii").on('mouseleave', function() {
+    return $(".slideout-ascii").on('mouseleave', function() {
       return $(this).removeClass('inchOut');
     });
   };
 
   $(function() {
-    $("#slideout_background").on('click', slideToggle);
+    $(".slideout_background").on('click', slideToggle);
     return addInchOutListener();
   });
 

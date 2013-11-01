@@ -17,7 +17,7 @@
 }
 
 /* line 29, ../sass/slide_out_panel.sass */
-#slideout-ascii {
+.slideout-ascii {
   position: absolute;
   height: 500px;
   width: 250px;
@@ -29,7 +29,7 @@
   transition-duration: 0.2s;
 }
 /* line 38, ../sass/slide_out_panel.sass */
-#slideout-ascii #slideout_background {
+.slideout-ascii .slideout_background {
   position: absolute;
   margin: 0px;
   width: 280px;

@@ -1,9 +1,15 @@
 # Web UI Slide-Out Panel
 
-[view the demo](https://dl.dropboxusercontent.com/u/27500327/ascii_web_experiment/index.html)
+[view the demo](http://dechimp.github.io/ascii)
+
+see the other [slideout panel](https://github.com/dechimp/slideout-panel) on github
+
 
 This is a tab on the side of the screen that pulls out a box when you
 click on it.  Used commonly for contact/feedback forms.
+
+Issues:
+- Doesn't display correctly in Safari
 
 Before:
 

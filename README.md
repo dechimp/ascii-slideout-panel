@@ -1,4 +1,4 @@
-# Web UI Slide-Out Panel
+# ASCII Slide-Out Panel
 
 [view the demo](http://dechimp.github.io/ascii)
 
@@ -13,7 +13,7 @@ Issues:
 
 Before:
 
-    -- 
+    --
     F |
     E |
     E |
@@ -29,7 +29,7 @@ After:
     =================*
                      *
     Name:_________   *
-                     *--- 
+                     *---
                      * F |
     Email:           * E |
     ______________   * E |

@@ -2,7 +2,7 @@
 
 [view the demo](http://dechimp.github.io/ascii)
 
-see the other [slideout panel](https://github.com/dechimp/slideout-panel) on github
+see the other (non-ASCII) [slideout panel](https://github.com/dechimp/slideout-panel) on github
 
 
 This is a tab on the side of the screen that pulls out a box when you

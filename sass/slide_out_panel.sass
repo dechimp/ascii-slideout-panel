@@ -17,8 +17,6 @@
 
 $slideout-width: 250px
 $slideout-background-width: 280px
-// $slideout-height: 150px
-// $tab-width: 100px
 
 .slide
   +transform(translate($slideout-width,0px))
@@ -33,63 +31,9 @@ $slideout-background-width: 280px
   line-height: 90%
   left: (0 - $slideout-width)
   +transition-duration(0.2s)
-  // &:hover
-    // +translate(4px,0px)
   .slideout_background
     position: absolute
     margin: 0px
     width: $slideout-background-width
     z-index: -1
-
-// #slideout  
-  // // +debug-slideout
-  // height: $slideout-height
-  // width: $slideout-width
-  // position: fixed
-  // top: 100px
-  // left: (-$slideout-width)
-  // // not sure why but this is causing a bug when closing the slideout box
-    // // +transition-duration(0.1s)  
- 
-  // #slideoutTab
-    // // +debug-feedback
-    // height: $slideout-width 
-    // width: $slideout-height
-    // position: relative
-    // +rotate
-    // left: 0px
-    // top: 0px
-    // z-index: -1 
-    // a   
-      // position: fixed
-      // background: $background
-      // top: (-29px - $slideout-width)
-      // left: 30%
-      // height: auto 
-      // width: auto 
-      // padding: 8px 16px
-      // +bold-text
-      // +rounded-corners
-      // +transition-duration(0.1s)
-      // &:hover 
-        // +transform(translate(0px,-5px) scale(1.05))
-
-  // #slideoutForm
-    // // +debug-form
-    // $slideout-padding: 10px
-    // width: ($slideout-width - (2 * $slideout-padding))
-    // background: $background
-    // padding: $slideout-padding
-    // position: fixed
-    // top: 0px
-    // +border-right-radius(3px)
-    // label
-      // display: block
-      // +bold-text
-    // input, textarea
-      // +border-radius(4px)
-    // [type=submit]:hover
-      // +transform(translate(1px,1px))
-    // fieldset
-      // margin: 10px 0px
 
